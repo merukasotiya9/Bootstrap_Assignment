@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- List-group is used to create a group of item and line by line all item show -->
+     <!-- list-group-numbered is used to give the number -->
+    <ul class="list-group list-group-numbered list-group-horizontal">
+        <li class="list-group-item list-group-item-success list-group-item-action">
+            <input type="checkbox" class="form-check-input">Home
+        </li>
+        <li class="list-group-item list-group-item-danger list-group-item-action">Service</li>
+        <li class="list-group-item  list-group-item-primary list-group-item-action">about-us</li>
+        <li class="list-group-item list-group-item-warning list-group-item-action">Setting</li>
+    </ul>
+    <br><br><br><br><br>
+    <!-- List-group-flush is used to removed the border of item -->
+     <!-- Active is used to show highlight of item -->
+    <!-- Disabled used to disabled item -->
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item list">An item</li>
+        <li class="list-group-item disabled">A second item</li>
+        <li class="list-group-item active">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+    </ul>
+
+    <br><br><br><br><br>
+    <!-- List-group-item-action class is used to show the hover , action -->
+    <!-- you used to disabled attribute for the button bcs a tag not suppport disabled attribute but .disabled support -->
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

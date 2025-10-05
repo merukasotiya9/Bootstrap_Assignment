@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- A slideshow component for cycling through elements—images or slides of text— -->
+    <!-- Carousel used class is data-bs-ride without not sliding images  -->
+
+    <!-- Carousel-fade class is used to animation to slide with a fade transaction -->
+     <!-- Data-bs-touch is used to no slide only image show but sliding not execute -->
+      <!-- carousel-dark slide class is used to indicators color and previous and next icon is black -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide carousel-fade carousel-dark slide"
+      data-bs-ride="carousel"
+      data-bs-touch="false"
+      data-bs-interval="false"
+    >
+    <!-- Used to indicators in Carousel used to class is carousel-indicators without icon don't show -->
+     <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <!-- Data-bs-interval class is used to give the time of slide to automatically cycling to the next item -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="./Image/carousel_img_2.jpg" height="600px" class="d-blockb m-auto ms-5 w-100" alt="..." />
+          <!-- some caption add in the image used to class is carousel-caption -->
+          <div class="carousel-caption d-none d-md-block text-black">
+        <h2>First slide label</h2>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="./Image/carousel_img_1.jpg" height="600px" class="d-block m-auto  w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+        <h2>First slide label</h2>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Image/carousel_img_3.jpg" height="600px" class="d-block m-auto w-100" alt="..." />
+         <div class="carousel-caption d-none d-md-block text-black">
+        <h2>First slide label</h2>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+        </div>
+      </div>
+      <!-- Carousel-control-prev used to give the previous button
+       and data-bs-slide="prev" without image not slide only show previous button  -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+      <!-- carousel-control-prev-icon is used to give the shape of prev icon -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>

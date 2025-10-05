@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <form action="" class="form-control">
+    <!-- In checkbox  label used to class is form-check-label -->
+     <!-- And checkbox used to class is form-check-input -->
+    <input type="checkbox" name="checkboxexample" id="checkboxexample" class="form-check-input">
+    <label for="checkboxexample" class="form-check-label">Default checkbox</label>
+
+    <input type="checkbox" name="checkboxexample" id="checkboxexample" class="form-check-input" Checked>
+    <label for="checkboxexample" class="form-check-label">Checked checkbox</label>
+
+    <!-- checked used to already check the checkbox -->
+    <div class="form-check">
+        <input type="checkbox" name="checkboxexample" id="checkboxexample" class="form-check-input" Checked disabled>
+        <label for="checkboxexample" class="form-check-label">Checked checkbox</label>
+    </div>
+
+    <!-- radio button same as a checkbox only type change -->
+    <div class="form-check">
+        <label for="gender" name="gender" class="form-check-label">Gender</label><br>
+        <input type="radio" name="gender" id="gender" class="form-check-input" checked>
+        <label for="checkboxexample" class="form-check-label">MALE</label><br>
+        <input type="radio" name="gender" id="gender" class="form-check-input">
+        <label for="checkboxexample" class="form-check-label">FEMALE</label><br>
+        <input type="radio" name="gender" id="gender" class="form-check-input">
+        <label for="checkboxexample" class="form-check-label">CUSTOM</label>
+    </div>
+
+    <!-- same as checkbox but only use to form-switch class to add button as a switch -->
+<div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+</div>
+<div class="form-check form-switch">
+     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+     <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+</div>
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+</div>
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+</div>
+
+    <!-- Inline checkbox use to form-check-inline -->
+<div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">1</label>
+</div>
+<div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">2</label>
+</div>
+<div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+        <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+</div><br>
+
+    <!-- toogle button  used to class btn-check-->
+     <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+     <label class="btn btn-primary" for="btn-check">Single toggle</label>
+
+     <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+    <label class="btn btn-secondary" for="option1">Checked</label><br>
+
+    <!-- btn outline style used to outline border and hover to btn -->
+    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+    <label class="btn btn-outline-warning" for="btn-check">Single toggle</label><br>
+
+    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" checked>
+    <label class="btn btn-primary btn-outline-info" for="btn-check">Single toggle</label><br>
+
+    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" disabled>
+    <label class="btn  btn-outline-secondary" for="btn-check">Single toggle</label>
+
+    <!-- Range is used to class form-range -->
+     <label for="customRange1" class="form-label">Example range</label>
+    <input type="range" class="form-range" id="customRange1">
+
+    <!-- used to mix , min for set the range and step used to range space -->
+    <label for="customRange3" class="form-label">Example range</label>
+    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+    </form>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
